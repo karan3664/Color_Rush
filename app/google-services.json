@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "853133411387",
+    "firebase_url": "https://luxahaxa.firebaseio.com",
+    "project_id": "luxahaxa",
+    "storage_bucket": "luxahaxa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853133411387:android:a87e82cd7e46efe0a0881e",
+        "android_client_info": {
+          "package_name": "app.luxahaxa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853133411387-91sjpqas7f90puolscguvkj8srv8dlu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSdcX810i2m7X8_tfFSRXOL9we_YZgH0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853133411387-91sjpqas7f90puolscguvkj8srv8dlu1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "853133411387-dcli7quf9ehn0m7oqq1r3n4lo2kppesf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.LuxaHaxa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

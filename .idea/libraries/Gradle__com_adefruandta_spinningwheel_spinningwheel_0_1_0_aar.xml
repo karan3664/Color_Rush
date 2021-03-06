@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.adefruandta.spinningwheel:spinningwheel:0.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/063d7c68c7b031559ac0de24d3ca02dc/jetified-spinningwheel-0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/063d7c68c7b031559ac0de24d3ca02dc/jetified-spinningwheel-0.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/063d7c68c7b031559ac0de24d3ca02dc/jetified-spinningwheel-0.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a66fc6eef134067b61925dd03e1207b/jetified-spinningwheel-0.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a66fc6eef134067b61925dd03e1207b/jetified-spinningwheel-0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a66fc6eef134067b61925dd03e1207b/jetified-spinningwheel-0.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adefruandta.spinningwheel/spinningwheel/0.1.0/34d3972684895a4342deee90c0909b2813bf389d/spinningwheel-0.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adefruandta.spinningwheel/spinningwheel/0.1.0/6bf52960272f465a746899ce2d9a756c243ef014/spinningwheel-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

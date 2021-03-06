@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <View
+        android:id="@+id/viewBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    style="@style/customfontstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="Welcome to the"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    style="@style/customfontstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:text="L U X A  H A X A"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/playBtn"
+                        style="@style/customfontstyle"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bg"
+                        android:text="PLAY"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+
+                    <Button
+                        android:id="@+id/creditsBtn"
+                        style="@style/customfontstyle"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bg"
+                        android:text="Add Points"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+
+                    <Button
+                        android:id="@+id/quitBtn"
+                        style="@style/customfontstyle"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bg"
+                        android:text="quit"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

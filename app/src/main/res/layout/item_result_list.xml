@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red_A700" />
+
+            <RatingBar
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:numStars="3"
+                style="@style/Yellow.Small.AppCompatRatingBar.White"
+                android:visibility="visible"
+                android:secondaryProgressTint="@color/colorPrimary"
+                android:progressTint="@color/colorPrimary"
+                android:rating="2"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/bidAmt"
+            style="@style/customfontstyle"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Bid Amt"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivWin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/close"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/winAmt"
+            style="@style/customfontstyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Win"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivLoss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/close"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lossAmt"
+            style="@style/customfontstyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Win"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <!--
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/cBalance"
+            style="@style/customfontstyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Current Balance"
+
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black_color" />
+</LinearLayout>

@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.withdraw_amt.WithdrawAmoutFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9CE91E63" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/marquesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On wining point 30% service tax is applicable. Terms &amp; conditions applicable."
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    style="@style/customfontstyle"
+                    android:ellipsize="marquee"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/customfontstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Available Points"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lyt_bid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bitcoint" />
+                        <TextView
+                            android:id="@+id/tvBalance"
+                            style="@style/customfontstyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="500"
+                            android:textColor="@color/white"
+                            android:textSize="40sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/customfontstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Available Withdrawal Points"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bitcoint" />
+                        <TextView
+                            android:id="@+id/tvWithdrawal"
+                            style="@style/customfontstyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="500"
+                            android:textColor="@color/white"
+                            android:textSize="40sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/customfontstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="10dp"
+                        android:gravity="start"
+                        android:text="Request Withdraw Points"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/customfontstyle"
+                            android:layout_width="@dimen/dimen_30dp"
+                            android:layout_height="@dimen/dimen_30dp"
+                            android:text=""
+                            android:layout_gravity="center"
+                            android:src="@drawable/bitcoint"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+
+                        <EditText
+                            android:id="@+id/edamt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="Enter Points"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/grey_200"
+                            android:textSize="30dp">
+
+                            <requestFocus />
+                        </EditText>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/customfontstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="10dp"
+                        android:gravity="start"
+                        android:text="Recommended"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            app:flexWrap="nowrap"
+                            app:justifyContent="flex_start">
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent" />
+
+                            <Button
+                                android:id="@+id/ed_50"
+                                style="@style/EditText.Flat.Grey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_rounded_white_outline"
+                                android:editable="false"
+                                android:gravity="center"
+                                android:minHeight="@dimen/spacing_xmlarge"
+                                android:text="1000"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent" />
+
+                            <Button
+                                android:id="@+id/ed_100"
+                                style="@style/EditText.Flat.Grey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_rounded_white_outline"
+                                android:editable="false"
+                                android:gravity="center"
+                                android:minHeight="@dimen/spacing_xmlarge"
+                                android:text="2000 "
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent" />
+
+                            <Button
+                                android:id="@+id/ed_200"
+                                style="@style/EditText.Flat.Grey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xmlarge"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_rounded_white_outline"
+                                android:editable="false"
+                                android:gravity="center"
+                                android:minHeight="@dimen/spacing_xmlarge"
+                                android:text="5000"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <View
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent" />
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/customfontstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="10dp"
+                        android:gravity="start"
+                        android:text="Withdrawal To"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvBankList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:isScrollContainer="true"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Or"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_24sp" />
+
+                    <Button
+                        android:id="@+id/btnAddNew"
+                        style="@style/customfontstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorPrimary"
+                        android:drawableRight="@drawable/ic_add"
+                        android:padding="10dp"
+                        android:text=" Add New Bank Account "
+                        android:textColor="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:textStyle="bold"
+                            android:tint="@color/cyan_800"
+                            app:backgroundTint="@android:color/white"
+                            app:fabSize="normal"
+                            app:rippleColor="@color/cyan_800"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:theme="@style/ProgressBar.White"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_large">
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:theme="@style/EditText.White.Hint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_name"
+                                style="@style/customfontstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-4dp"
+                                android:layout_marginRight="-4dp"
+                                android:hint="NAME"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/grey_10"
+                                android:theme="@style/EditText.White" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:theme="@style/EditText.White.Hint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edbank_name"
+                                style="@style/customfontstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-4dp"
+                                android:layout_marginRight="-4dp"
+                                android:hint="BANK NAME"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/grey_10"
+                                android:theme="@style/EditText.White" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditText.White.Hint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edbank_account_number"
+                                style="@style/customfontstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-4dp"
+                                android:layout_marginRight="-4dp"
+                                android:hint="BANK ACCOUNT NUMBER"
+                                android:inputType="number"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/grey_10"
+                                android:theme="@style/EditText.White" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditText.White.Hint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edbank_branch_name"
+                                style="@style/customfontstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-4dp"
+                                android:layout_marginRight="-4dp"
+                                android:hint="BANK BRANCH NAME"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/grey_10"
+                                android:theme="@style/EditText.White" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditText.White.Hint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edbank_ifsc_code"
+                                style="@style/customfontstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-4dp"
+                                android:layout_marginRight="-4dp"
+                                android:hint="IFSC CODE"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textColor="@color/grey_10"
+                                android:theme="@style/EditText.White" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/EditText.White.Hint">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edamt"
+                                style="@style/customfontstyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-4dp"
+                                android:layout_marginRight="-4dp"
+                                android:hint="AMOUNT"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textColor="@color/grey_10"
+                                android:theme="@style/EditText.White" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/fab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:textStyle="bold"
+                                android:tint="@color/cyan_800"
+                                app:backgroundTint="@android:color/white"
+                                app:fabSize="normal"
+                                app:rippleColor="@color/cyan_800"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:theme="@style/ProgressBar.White"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>-->
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:theme="@style/ProgressBar.White"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

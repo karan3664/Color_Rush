@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_dialog"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_mlarge"
+            android:paddingTop="@dimen/spacing_middle"
+            android:paddingRight="@dimen/spacing_mlarge"
+            android:paddingBottom="@dimen/spacing_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_medium">
+
+                <TextView
+                    android:id="@+id/bidText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:text="PLACE BID"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_90"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edBidAmount"
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:paddingLeft="@dimen/spacing_large"
+                    android:paddingRight="@dimen/spacing_large"
+                    android:text="00"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:text="Min Bid Points"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <EditText
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:editable="false"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingRight="@dimen/spacing_large"
+                        android:text="50" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_xlarge"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:text="Max Bid Points"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <EditText
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:background="@drawable/edit_text_round_bg_outline"
+
+                        android:editable="false"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingRight="@dimen/spacing_large"
+                        android:text="5000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/spacing_medium">
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        app:flexWrap="nowrap"
+                        app:justifyContent="flex_start">
+
+                        <Button
+                            android:id="@+id/ed_50"
+                            style="@style/EditText.Flat.Grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rounded_grey_outline"
+                            android:editable="false"
+                            android:gravity="center"
+                            android:minHeight="@dimen/spacing_xmlarge"
+                            android:text="50"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/ed_100"
+                            style="@style/EditText.Flat.Grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rounded_grey_outline"
+                            android:editable="false"
+                            android:gravity="center"
+                            android:minHeight="@dimen/spacing_xmlarge"
+                            android:text="100 "
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/ed_200"
+                            style="@style/EditText.Flat.Grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rounded_grey_outline"
+                            android:editable="false"
+                            android:gravity="center"
+                            android:minHeight="@dimen/spacing_xmlarge"
+                            android:text="200 "
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/ed_300"
+                            style="@style/EditText.Flat.Grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rounded_grey_outline"
+                            android:editable="false"
+                            android:gravity="center"
+                            android:minHeight="@dimen/spacing_xmlarge"
+                            android:text="300 "
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/ed_400"
+                            style="@style/EditText.Flat.Grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_rounded_grey_outline"
+                            android:editable="false"
+                            android:gravity="center"
+                            android:minHeight="@dimen/spacing_xmlarge"
+                            android:text="400 "
+                            android:textSize="15sp" />
+                    </com.google.android.flexbox.FlexboxLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/spacing_medium">
+
+
+                    <Button
+                        android:id="@+id/ed_500"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="500"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_1000"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="1000 "
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_1500"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="1500 "
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_2000"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="2000 "
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_2500"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="2500 "
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/spacing_medium">
+
+
+                    <Button
+                        android:id="@+id/ed_3000"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="3000 "
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_3500"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="3500 "
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_4000"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="4000 "
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_4500"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="4500 "
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/ed_5000"
+                        style="@style/EditText.Flat.Grey"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rounded_grey_outline"
+                        android:editable="false"
+                        android:gravity="center"
+                        android:minHeight="@dimen/spacing_xmlarge"
+                        android:text="5000"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_placebid"
+                    style="@style/Button.Primary.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_rect_black_grey"
+                    android:text="PLACE BID"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

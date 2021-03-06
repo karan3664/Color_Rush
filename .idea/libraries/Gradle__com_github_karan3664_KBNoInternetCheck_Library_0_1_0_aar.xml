@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.karan3664:KBNoInternetCheck-Library:0.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7d3a227e977b7053b85397c7e1751c14/jetified-KBNoInternetCheck-Library-0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7d3a227e977b7053b85397c7e1751c14/jetified-KBNoInternetCheck-Library-0.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7d3a227e977b7053b85397c7e1751c14/jetified-KBNoInternetCheck-Library-0.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.karan3664/KBNoInternetCheck-Library/0.1.0/d68ce3eb3ef5aee70172231a4c3ab920f5a6dbe3/KBNoInternetCheck-Library-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

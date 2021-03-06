@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_gallery">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="app.bizita.colorrush.ui.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_call_B"
+            app:destination="@+id/nav_gallery"
+            app:popUpTo="@id/nav_gallery"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="app.bizita.colorrush.ui.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="app.bizita.colorrush.ui.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_calB"
+            app:destination="@+id/nav_gallery"
+            app:popUpTo="@id/nav_gallery"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_withdraw"
+        android:name="app.bizita.colorrush.ui.ui.withdraw_amt.WithdrawAmoutFragment"
+        android:label="WithDraw Points"
+        tools:layout="@layout/fragment_withdraw_amout" />
+
+    <fragment
+        android:id="@+id/nav_credit"
+        android:name="app.bizita.colorrush.ui.ui.credit_amt.CreditAmountFragment"
+        android:label="Credit Points"
+        tools:layout="@layout/fragment_credit_amount" />
+    <fragment
+        android:id="@+id/nav_win"
+        android:name="app.bizita.colorrush.ui.ui.cancel_withdrawalamt.CancelWithdrawalAmtFragment"
+        android:label="Requested Withdrawal Points"
+        tools:layout="@layout/fragment_cancel_withdrawal_amt" />
+   <fragment
+        android:id="@+id/nav_pp"
+        android:name="app.bizita.colorrush.ui.ui.privacy_policy.PrivacyPolicyFragment"
+        android:label="Privacy Policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3e5fc"
+    tools:context=".ui.ui.ColorFragment">
+
+    <com.adefruandta.spinningwheel.SpinningWheelView
+        android:id="@+id/wheel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:wheel_arrow_color="@color/colorPrimaryDark"
+        app:wheel_colors="@array/mdcolor_random"
+        app:wheel_items="@array/dummy"
+        app:wheel_stroke_color="@color/colorPrimary"
+        app:wheel_stroke_width="5dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
